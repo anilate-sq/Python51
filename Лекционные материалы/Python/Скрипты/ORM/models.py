@@ -46,6 +46,8 @@ movie_genres = Table(
 )
 
 class Review(Base):
+    # Отзывы
+    __tablename__ = 'reviews'
     id = Column(Integer, primary_key=True, autoincrement=True)
     user_id = Column(Integer, ForeignKey('users.id', ondelete="cascade"))
     movie_id = Column(Integer, ForeignKey('movies.id'), ondelete="cascade")

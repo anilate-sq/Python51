@@ -1,0 +1,4 @@
+ - fastapi - фреймворк
+ - uvicorn - сервер
+ - sqlalchemy - ORM
+ - psycopg2 - PostgreSQL
